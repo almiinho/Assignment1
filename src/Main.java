@@ -12,13 +12,17 @@ public class Main {
         int min = findMinFromArr(arr, n);
         System.out.println("Problem 1. Min from arr is: " + min);
     }
-
+/*
+@findMinFromArr- finds minimum value from the array
+@n- length of array
+@return Math.min-returning minimum of function
+ */
     public static int findMinFromArr(int[] arr, int n) {
         if (n == 1)
             return arr[0];
         else {
             int min = findMinFromArr(arr, n - 1); //move with n-1 length
-            return Math.min(min, arr[n-1]);//return lesser number
+            return Math.min(min, arr[n-1]);//return lower number
         }
     }
 }
