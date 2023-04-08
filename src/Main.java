@@ -15,7 +15,7 @@ public class Main {
 /*
 @findMinFromArr- finds minimum value from the array
 @n- length of array
-@return Math.min-returning minimum of function
+@return Math.min-returning minimum of the function
  */
     public static int findMinFromArr(int[] arr, int n) {
         if (n == 1)
