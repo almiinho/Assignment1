@@ -1,10 +1,9 @@
 public class Problem6 {
-    public int FindPowerOf(int a, int b){
-        if (b == 1){
-            return a;
+    public static int sqrt(int a1, int n1) {
+        int res = 1;
+        for (int i = 0; i < n1; i++) {
+            res *= a1;
         }
-        else{
-            return a*FindPowerOf(a, b-1);// multiplying a to n times
-        }
+        return res;
     }
 }
