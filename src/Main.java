@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.stream.StreamSupport;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -26,8 +26,13 @@ public class Main {
         System.out.println(" n-th element in Fibonacci sequence is: " + findFib);//finds nth element in fibonacci sequence
         Problem6 c = new Problem6();
         System.out.println("a^n: "+c.FindPowerOf(n,m));//finds a power of n
-        int[] reversedArr = Problem7.reverse(arr, n);
         System.out.print("Reversed array: ");//creates reversed array
+        String g = scanner.nextLine();
+        Problem8 d = new Problem8();
+        System.out.println("Problem 8: "+d.isAllDigits(g));//checks does all elements in array digits
+        int binomial = Problem9.findBinCoeff(a, n);
+        System.out.println(binomial);
+
     }
     }
 
