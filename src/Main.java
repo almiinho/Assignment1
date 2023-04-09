@@ -16,7 +16,12 @@ public class Main {
         double findAvg = Problem2.findAvFromArr(arr);
         System.out.println("avg of all elements is: " + findAvg);// finds average value in array
         Problem3 a = new Problem3(n);
-        System.out.println("Problem 3: "+a.Prime(n));//checks does n is a prime number or no
-        }
+        System.out.println("Problem 3: " + a.Prime(n));//checks does n is a prime number or no
+        Problem4 b = new Problem4();
+        System.out.println("Problem 4: " + b.FindFact(n));//finds factorial of a number
+        int findFib = Problem5.fibonacci(n);
+        System.out.println(" n-th element in Fibonacci sequence is: " + findFib);//finds nth element in fibonacci sequence
+
+    }
     }
 
