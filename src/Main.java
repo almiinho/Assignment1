@@ -1,28 +1,20 @@
 import java.util.Scanner;
-public class Main {
+import java.util.stream.StreamSupport;
 
+public class Main {
     public static void main(String[] args) {
         int n;
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the  n: ");
         n = scanner.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        int min = findMinFromArr(arr, n);
-        System.out.println("Problem 1. Min from arr is: " + min);
+        int min = Problem1.findMinFromArr(arr, n);
+        System.out.println("minimum in the array: " + min);
+        double findAvg = Problem2.findAvFromArr(arr);
+        System.out.println("avg of all elements is: " + findAvg);
     }
-/*
-@findMinFromArr- finds minimum value from the array
-@n- length of array
-@return Math.min-returning minimum of the function
- */
-    public static int findMinFromArr(int[] arr, int n) {
-        if (n == 1)
-            return arr[0];
-        else {
-            int min = findMinFromArr(arr, n - 1); //move with n-1 length
-            return Math.min(min, arr[n-1]);//return lower number
-        }
     }
-}
+
